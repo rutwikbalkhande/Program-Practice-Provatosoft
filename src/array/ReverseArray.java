@@ -4,41 +4,25 @@ package array;
 import java.util.Arrays;
 
 public class ReverseArray {
-    // rotate array
+    // rotate array reverse without using extra space { dont use new arrays use }
     public static void main(String[] args) {
 
         int arr[] = {3, 1 ,4, 2, 5};                     // o/p  arr2: [2, 5, 3, 1, 4]
-        int d=2 ;
-        int n= arr.length;
 
-        int arr2[]=new int[arr.length];
+        System.out.println("arr:"+ Arrays.toString(arr));
 
-        int p=0;
-        int index=-1;    // find 2 is on which index.
+        int start=0;
+        int end= arr.length-1;
 
-
-        // find the 1 available on wjich position
-        for(int i=0;i<n; i++)
+        while(start < end)
         {
-            if (arr[i] == d)
-            {
-                index= i;
-                System.out.println( "index of 1: " + index);
-                arr2[p]=arr[i];
-                break;
-            }
-        }
-               for(int j= index; j < n;j++)
-               {
-                   arr2[p]=arr[j];
-                   p++;
-               }
-               for(int r=0;r<index;r++)
-               {
-                   arr2[p]= arr[r];
-                   p++;
-               }
+            int temp= arr[start];
+            arr[start]= arr[end];
+            arr[end] = temp;
 
-            System.out.println("arr2: " + Arrays.toString(arr2));
+            start++; end--;
+        }
+
+            System.out.println("Rotate Arr:  " + Arrays.toString(arr));
 
     }}

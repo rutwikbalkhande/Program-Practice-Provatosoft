@@ -3,6 +3,7 @@ package array;
 import java.util.Arrays;
 
 public class RotateArrayEasy {
+// find position of 1 ? start roatating arry fro th at position. left side number add at the end .
 
     public static void main(String[] args) {
 
