@@ -12,7 +12,7 @@ public class BracketsValidNot {
 
         String str = "({[]})";
 
-        Stack<Character> st = new Stack<>();
+        Stack<Character> stack = new Stack<>();
 
         for (int i = 0; i < str.length(); i++) {
 
@@ -20,20 +20,20 @@ public class BracketsValidNot {
 
             // Opening brackets → push
             if (ch == '(' || ch == '{' || ch == '[') {
-                st.push(ch);
+                stack.push(ch);
             }
             // Closing brackets → must match
             else {
-                if (st.isEmpty()) {
+                if (stack.isEmpty()) {
                     System.out.println("not balance");
 
                 }
 
 
-                // Check matching pair
-                if ((st.peek() == '(' && ch == ')') || (st.peek() == '{' && ch == '}') || (st.peek() == '[' && ch == ']')) {
+                // ️Check matching pair
+                if ((stack.peek() == '(' && ch == ')') || (stack.peek() == '{' && ch == '}') || (stack.peek() == '[' && ch == ']')) {
 
-                    st.pop();  // matched → remove
+                    stack.pop();  // matched → remove
                 }
                 else {
                     System.out.println("not balance");
@@ -43,10 +43,11 @@ public class BracketsValidNot {
         }
 
         // 3️⃣ If stack empty → balanced
-        if (st.isEmpty()) {
+        if (stack.isEmpty()) {
             System.out.println("balance");
         } else {
             System.out.println("not balance");
         }
+        System.out.println(stack);           // if not balence then show which not available
     }
 }

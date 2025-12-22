@@ -29,7 +29,8 @@ public class ArrayReverse {
         for(int i=arr.length-1; i>=0;i--)
         {
             t=arr[i];
-            System.out.print (t + " ");
+
+            System.out.print (  t + " ");
         }
 
     }

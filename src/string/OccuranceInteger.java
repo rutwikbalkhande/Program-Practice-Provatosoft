@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class AnagramInteger {
+public class OccuranceInteger {
     public static void main(String[] args) {
 
         List<Integer> list= Arrays.asList(1,2,5,5,5,2,1,4);

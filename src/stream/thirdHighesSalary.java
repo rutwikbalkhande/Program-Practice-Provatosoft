@@ -8,8 +8,6 @@ public class thirdHighesSalary {
 
          public static void main(String[] args) {
 
-
-
             List<Project> list= Arrays.asList(
                     new Project("Ram Finance App", "ACTIVE","1000"),
                     new Project("E-commerce System", "COMPLETED" ,"2000"),

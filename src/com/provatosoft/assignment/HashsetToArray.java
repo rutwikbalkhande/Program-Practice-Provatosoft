@@ -31,7 +31,7 @@ public class HashsetToArray {
     /*    String arr[]=new String[hs.size()];          //Another Way
         hs.toArray();   */
 
-        System.out.println("add into Arraty: "+ Arrays.toString(arr));
+        System.out.println("add into Array: "+ Arrays.toString(arr));
     }
 
     public static void main(String[] args) {
