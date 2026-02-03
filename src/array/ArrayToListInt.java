@@ -13,7 +13,7 @@ public class ArrayToListInt {
         int arr[]={1,5,3,4,6,8,9,4,7,6};
 
          List<Integer> list= Arrays.stream(arr).boxed().toList();
-         System.out.println("int Array stream: " +list);
+         System.out.println("int Array stream: " + list);
 
      }
 

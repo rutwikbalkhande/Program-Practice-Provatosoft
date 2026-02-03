@@ -9,5 +9,10 @@ public class a {
     public static void main(String[] args) {
 
 
+        int arr[] ={8,7,4,1,2,3};
+
+
+
+        System.out.println(Arrays.toString(arr));
     }
 }

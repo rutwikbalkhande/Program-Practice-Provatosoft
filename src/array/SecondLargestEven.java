@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 
 public class SecondLargestEven {
-    //sum all no. one no. with anthoe no. and find 2nd largest even number
+    //sum all no. one no. with anther no. and find 2nd largest even number
 
     public static void main(String[] args) {
         int arr[] = {5, 8, 3, 6};

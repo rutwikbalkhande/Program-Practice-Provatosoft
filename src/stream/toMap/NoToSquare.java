@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 public class NoToSquare {
     // we have Number as a key & generate square & store as value into the map
+        // o/p => {1=1, 2=4, 3=9, 4=16, 5=25}
 
     public static void main(String[] args) {
 

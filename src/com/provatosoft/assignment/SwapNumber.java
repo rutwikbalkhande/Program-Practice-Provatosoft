@@ -9,9 +9,9 @@ public class SwapNumber {
 
         System.out.println("swip Number without 3rd variable");
 
-         b=b-a;
+         b= b - a;
 
-         a=b+a;
+         a= a + b;
 
         System.out.println("a= "+a);
 

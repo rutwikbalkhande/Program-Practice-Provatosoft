@@ -8,7 +8,7 @@ public class LongestWord {
         String str= "hello i am rutwik ";
         String max="";
 
-         String word[] = str.trim().split("\s++");
+         String word[] = str.trim().split("\\s++");
 
         System.out.println(Arrays.toString(word));
         for(String n :word)

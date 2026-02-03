@@ -35,10 +35,7 @@ public class BracketsValidNot {
 
                     stack.pop();  // matched → remove
                 }
-                else {
-                    System.out.println("not balance");
-                    return;
-                }
+
             }
         }
 

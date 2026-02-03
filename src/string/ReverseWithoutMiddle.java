@@ -13,7 +13,7 @@ public class ReverseWithoutMiddle {
 
         for(int i=mid-1;i>=0;i--)
         {
-            rev= rev +str.charAt(i);
+            rev= rev + str.charAt(i);
         }
 
             rev=rev+str.charAt(mid);

@@ -2,7 +2,7 @@ package com.provatosoft.assignment;
 
 import java.util.Arrays;
 
-public class MoveZeroRight {
+public class MoveZeroLeft {
     // move all zero Right;
 
     public static void main(String[] args) {

@@ -3,7 +3,10 @@ package array;
 import java.util.*;
 
 public class Anmagram2 {
-    String[] input = {"listen", "silent", "enlist", "rat", "tar", "art", "top", "pot", "opt"};
+
+    String st="listen,silent,enlist,rat,tar,art,top,pot,opt";
+    String input[]= st.split(",");
+                            // {"listen", "silent", "enlist", "rat", "tar", "art", "top", "pot", "opt"}
 
     void m1(){
         Map<String, String> map = new HashMap<>();

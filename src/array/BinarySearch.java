@@ -13,7 +13,7 @@ public class BinarySearch {
 
         Arrays.sort(arr);   //must sort before binary search
 
-        int index= Arrays.binarySearch(arr,4);
+        int index= Arrays.binarySearch(arr,3);
 
         System.out.println("sorted Array: " + Arrays.toString(arr));
 
@@ -24,7 +24,7 @@ public class BinarySearch {
       else{
 
             System.out.println("search 5, index= " + index);
-        }
+      }
 
     }
 }

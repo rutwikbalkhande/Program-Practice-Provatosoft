@@ -9,9 +9,10 @@ public class WhiteSpaceChar {
 
     public static void main(String[] args) {
 
-        String input = "Hello world";
+        String input = " Hello world";
 
-        String noSpace= input.replaceAll("\\s+","");
+        String noSpace=input.replaceAll("\\s+","");
+                //input.replaceAll("\\s+","");
 
         System.out.println(noSpace);
 

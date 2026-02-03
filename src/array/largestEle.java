@@ -20,7 +20,8 @@ public class largestEle {
             }
 
         }
-        System.out.println(max2);
+        System.out.println(max1);
         System.out.println(Arrays.toString(arr));
+        System.out.println("1st largest : " + arr[arr.length-1]);
     }
 }

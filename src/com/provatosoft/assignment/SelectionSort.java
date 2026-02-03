@@ -7,7 +7,7 @@ public class SelectionSort {
 
     public static void main(String[] args) {
 
-        int arr[] = {8, 7, 4, 1, 2, 3, 6};
+        int arr[] = {36,19,29,12,5};
         int length = arr.length;
 
                 for(int i=0; i<length; i++)
