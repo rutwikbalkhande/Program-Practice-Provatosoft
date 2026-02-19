@@ -15,6 +15,7 @@ public class NoToSquare {
         Map<Integer, Integer> map= ls.stream().collect(Collectors.toMap
                                                      (n->n, n-> (n*n) ));
 
+
         System.out.println(map);
     }
 

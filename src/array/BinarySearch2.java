@@ -8,33 +8,34 @@ public class BinarySearch2 {
 
     public static void main(String[] args) {
 
-        int arr[] = {1, 2, 3, 4, 5, 6, 8, 9};
-        int target = 6;
+        int arr[]={1,2,3,4,5,6,7,8,9};
+         int target=6;
 
-        int low = 0;
-        int high = arr.length - 1 ;
-        int index = -1;  // default: not found
-                                                   //int loop=1;      // calculate loop how many times run
+         int low=0;
+         int high= arr.length-1;
+         int index=-1;
 
-        while (low <= high) {
+         while(low <= high)
+         {
+             int mid= low + (high- low)/2;
 
-            int midIndex = low + (high - low) / 2;
+             if(arr[mid]== target)
+             {
+                 index = mid;
+                 break;
+             }
 
-                                                    // loop++;      //  System.out.println("check loop Run: "+ loop);
-            if (arr[midIndex] == target) {
-                index = midIndex;
-                break; // element found
-            }
+             if(target < arr[mid])
+             {
+                 high = mid-1;
+             }
+             else  {
 
-            if (target < arr[midIndex]) {
-                high = midIndex - 1; // go left
-            } else {
-                low = midIndex + 1;  // go right
-            }
-        }
+                 low= mid + 1;
+             }
 
-        System.out.println("check element: " + target);
-        System.out.println("Available On index : " +index);
-       // System.out.println("check loop Run: "+ loop);
+         }
+        System.out.println(target + " availble on index: "+ index);
+
     }
 }

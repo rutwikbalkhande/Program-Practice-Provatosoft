@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class IndexbyName {
-    // we hjave name list store names with index. index = key, value= name;
+    // we have name list store names with index. index = key, value= name;
 
     public static void main(String[] args) {
 
