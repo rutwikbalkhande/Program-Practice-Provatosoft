@@ -22,11 +22,11 @@ public class ArrayReverseInGroup {
 
                 left++; right--;
            }
-           i= i+k;
-           System.out.println(i);
-       }
+           i= i+k-1;
+
+               }
         System.out.println("reverse array in pair of group");
         System.out.println(Arrays.toString(arr));
-
+        System.out.println(len);
     }
 }

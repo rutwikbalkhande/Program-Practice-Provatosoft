@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Longest_Char_Index {
 
-    // find starting & ending index of most repeating character.
+    // find starting & ending index of most repeating character in sequence.
 
     public static void main(String[] args) {
 
@@ -49,9 +49,9 @@ public class Longest_Char_Index {
         }
 
         System.out.println(Arrays.toString(arr));
-        System.out.println(start);
-        System.out.println(end);
-        System.out.println(character);
+        System.out.println("start index: " + start);
+        System.out.println("end index: " + end);
+        System.out.println("character: " + character);
 
     }
 }

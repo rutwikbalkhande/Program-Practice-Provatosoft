@@ -55,9 +55,10 @@ public class LongestPairStringToInt {
         System.out.println("Longest cosecative sequence Starting and ending index...");
         System.out.println(Arrays.toString(arr));
 
+        System.out.println("most repeat value:" + arr[start]);
         System.out.println("starting index:" + start);
         System.out.println("ending index:"+ end);
-        System.out.println("value:" + arr[start]);
+
 
     }
 }

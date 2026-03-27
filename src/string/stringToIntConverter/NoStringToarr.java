@@ -10,10 +10,11 @@ public class NoStringToarr {
         char ch[]=str.toCharArray();
         int arr[]= new int[ch.length];
 
-for(int i=0;i<arr.length;i++)
-{
-    arr[i]= Integer.parseInt(String.valueOf(ch[i]));
-}
+     for(int i=0;i<arr.length;i++)
+      {
+          arr[i]= Integer.parseInt(String.valueOf(ch[i]));
+
+     }
         System.out.println(Arrays.toString(arr));
     }
 }

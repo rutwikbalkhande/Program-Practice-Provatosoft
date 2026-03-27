@@ -13,7 +13,7 @@ public class OccuranceChar {
 
     public void character(){
 
-        String str = "Java HungryY";
+        String str = "Java ndskjn";
      //   String word= str.trim().replaceAll("\\s+","");        // replaceAll= remove space between words
 
         System.out.println("character:");

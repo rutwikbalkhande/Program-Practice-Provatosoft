@@ -29,13 +29,11 @@ public class BracketsValidNot {
 
                 }
 
-
                 // ️Check matching pair
                 if ((stack.peek() == '(' && ch == ')') || (stack.peek() == '{' && ch == '}') || (stack.peek() == '[' && ch == ']')) {
 
                     stack.pop();  // matched → remove
                 }
-
             }
         }
 

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class dub2Array {
+ // find dublicate print only ones in array
 
-    // find dublicate print only ones in array
     public static void main(String[] args) {
         int arr1[] = {1, 2, 4, 3};
         int arr2[] = {2, 2, 3,5, 8,16,4};

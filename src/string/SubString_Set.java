@@ -33,11 +33,13 @@ public class SubString_Set {
                 longest = current;
 
                 start = i;          // index starting and ending
-                end = i + current.length() - 1;
+                end = i + current.length() - 2;
             }
         }
 
         System.out.println("Longest Substring: " + longest);
         System.out.println("Length: " + longest.length());
+        System.out.println("start index: " + start);
+        System.out.println("end index: " + end);
     }
 }

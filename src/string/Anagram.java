@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Anagram {
     public static void main(String[] args) {
-        String name[] = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        String[] name = {"listen", "silent", "enlist", "rat", "tar", "art", "top", "pot", "opt"};
 
         Map<String, String> map = new HashMap<>();
 
