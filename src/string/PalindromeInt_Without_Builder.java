@@ -11,7 +11,7 @@ public class PalindromeInt_Without_Builder {
 
         while(num > 0){
             int dig= num %10;                  // get last digit
-            System.out.println(dig);
+                                       // System.out.println(dig);
             rev =  rev * 10 + dig;
 
             num= num/10;                       //remove last digit

@@ -5,25 +5,24 @@ import java.util.*;
 public class Anagram2 {
     public static void main(String[] args) {
 
-        String name[]={"eat","tea","tan","ate","nat","bat"};
-        // Map of sorted word -> list of words
-     Map<String, List<String>> map = new HashMap<>();
+        String name = "listen,silent, enlist, rat,tar,art, top, pot, opt";
 
-        for(String str: name){
-              char c[]= str.toCharArray();
-            Arrays.sort(c);
+        String[] names = name.split(",");
 
-            String key= new String(c);
+        Map<String, String> map = new HashMap<>();
 
-            map.computeIfAbsent(key, k-> new ArrayList<>()).add(str);
+        for (String str : names) {
+            char ch[] = str.trim().toCharArray();
+            Arrays.sort(ch);
+
+            String key = new String(ch);
+
+            if (!map.containsKey(key)) {
+                map.put(key, str);
+            } else {
+                map.put(key, map.get(key) + " " + str);
+            }
         }
-        // Convert values to List<List<String>>
-        List<List<String>> list = new ArrayList<>(map.values());
-
-        System.out.println("list: " + list);
-        System.out.println("map: " + map);
-
+        System.out.println(map);
     }
-
-
 }
