@@ -6,7 +6,7 @@ public class MainOverload {
         System.out.println("original main method");
 
         main(10);
-        main("hello");
+       // main("hello");
     }
 
     public static void main(String s) {

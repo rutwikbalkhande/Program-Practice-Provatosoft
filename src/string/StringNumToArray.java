@@ -15,7 +15,17 @@ public class StringNumToArray {
             arr[i]= Integer.parseInt(s[i]);
         }
 
-               System.out.println(Arrays.toString(s));
+               System.out.println("method 1: convert String to int  Array");
                System.out.println(Arrays.toString(arr));
+
+      // Method 2 covert String  to int Array
+
+        System.out.println("\n method 2: convert String to int  Array");
+
+        String num= "1,1,2,2,3,4,2,2,2,2,2,2,7,8,9,10";
+
+        int arr2[]  = Arrays.stream(num.split(",")).mapToInt(Integer::parseInt).toArray();
+
+        System.out.println(Arrays.toString(arr2));
     }
 }

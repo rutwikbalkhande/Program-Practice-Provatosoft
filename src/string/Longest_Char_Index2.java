@@ -6,21 +6,21 @@ public class Longest_Char_Index2 {
 
     public static void main(String[] args) {
 
-        String arr = "a,d,c,d,s,a,a,b,b,b,b,b,d,d,d";
+        String arr = "a,d,c,a,a,b,b,b,b,b,d,d,d";
         String st[] = arr.split(",");
 
         int maxcount = 1;
         int start = 0;
         int end = 0;
 
-
-        for (int i = 1; i < st.length; i++) {
+        for (int i = 0; i < st.length; i++) {
             int count = 1;
             int j;
             for (j = i + 1; j < st.length; j++) {
                 if (st[i].equals(st[j])) {
                     count++;
-                } else {
+                }
+                else {
                     break;
                 }
             }

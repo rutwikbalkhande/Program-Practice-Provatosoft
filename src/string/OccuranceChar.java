@@ -13,23 +13,26 @@ public class OccuranceChar {
 
     public void character(){
 
-        String str = "Java ndskjn";
-     //   String word= str.trim().replaceAll("\\s+","");        // replaceAll= remove space between words
+        String str= "helllo i am   rautwik ";
 
-        System.out.println("character:");
-        Map <Character, Integer> map = new HashMap<>();
+        String s= str.trim().replaceAll(" ","");
 
-        for(char c : str.toCharArray()){
-            if( map.containsKey(c))
-            {
-                map.put(c, map.get(c) +1);
+        Map<Character,Integer> map= new HashMap<>();
+
+        for(char ch: s.toCharArray()){
+
+            if(!map.containsKey(ch)){
+                map.put(ch,1);
+
             }
-            else{
-                map.put(c, +1);
+            else {
+                map.put(ch, map.get(ch)+1);
             }
         }
         System.out.println(map);
     }
+
+
 
     void number(){
         List<Integer> list= Arrays.asList(1,1,2,2,2,5,5,4);
