@@ -13,9 +13,7 @@ public class ArrayListReverseDesc
       Integer arr[]= {1,2,3,4,5,6};
 
         ArrayList<Integer> al= new ArrayList<>(Arrays.asList(arr));
-
         System.out.println("original list: " + al);
-
 
         Collections.reverse(al);
 

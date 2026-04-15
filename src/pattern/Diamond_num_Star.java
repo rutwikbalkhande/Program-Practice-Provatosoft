@@ -1,11 +1,17 @@
-package array;
+package pattern;
 
-
-import java.util.Arrays;
-import java.util.Comparator;
-
-public class a {
-
+public class Diamond_num_Star {
+/*
+    1
+   1 2
+  1 2 3
+ 1 2 3 4
+1 2 3 4 5
+ * * * *
+  * * *
+   * *
+    *
+ */
     public static void main(String[] args) {
 
         for(int r=1;r<=5;r++)
@@ -39,5 +45,3 @@ public class a {
     }
 
 }
-
-

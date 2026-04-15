@@ -9,7 +9,11 @@ public class InsertionSort {
         int arr[]={7,8,3,1,2};
         int len= arr.length;
 
+<<<<<<< HEAD
         for(int i=1;i<len;i++){
+=======
+        for(int i=1; i<len; i++){
+>>>>>>> db92610 (add new prgm)
             int current= arr[i];
             int j= i-1;
 

@@ -2,48 +2,47 @@ package multithreding;
 
 public class EvenOddPrint {
 
-    int number = 1;
-    final int MAX = 100;
+    int num = 1;
+    int max = 10;
 
-    public synchronized void printEven() {
-        while (number <= MAX) {
-            if (number % 2 != 0) {
+    synchronized void printOdd() {
+        while (num <= max) {
+            if (num % 2 == 0) {
                 try {
-                    wait();  // wait for odd thread to print
-
-                    //  Thread.sleep(500)
+                    wait();
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    Thread.currentThread().interrupt();
                 }
             } else {
-                System.out.println("Even: " + number + " -> " + Thread.currentThread().getName());
-                number++;
-                notify();  // notify odd thread
+                System.out.print(num + " ");
+                num++;
+                notify();
             }
         }
     }
 
-    public synchronized void printOdd() {
-        while (number <= MAX) {
-            if (number % 2 == 0) {
+    synchronized void printEven() {
+        while (num <= max) {
+            if (num % 2 != 0) {
                 try {
-                    wait();  // wait for even thread to print
+                    wait();
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+                    Thread.currentThread().interrupt();
                 }
             } else {
-                System.out.println("Odd: " + number + " -> " + Thread.currentThread().getName());
-                number++;
-                notify();  // notify even thread
+                System.out.print(num + " ");
+                num++;
+                notify();
             }
         }
     }
 
     public static void main(String[] args) {
+
         EvenOddPrint evenOdd = new EvenOddPrint();
 
-        Thread t1 = new Thread(() -> evenOdd.printEven(), "EvenThread");
-        Thread t2 = new Thread(() -> evenOdd.printOdd(), "OddThread");
+        Thread t1 = new Thread(() -> evenOdd.printOdd(), "OddThread");
+        Thread t2 = new Thread(() -> evenOdd.printEven(), "EvenThread");
 
         t1.start();
         t2.start();
