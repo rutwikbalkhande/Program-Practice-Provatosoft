@@ -1,6 +1,6 @@
 package array;
 
-public class MaxSubArray {
+public class MaxSubArray_kadaneAlgo {
     // find maximum sum of the sub Array using kadanes algorithm
 
     public static void main(String[] args) {

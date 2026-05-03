@@ -8,11 +8,12 @@ public class SelectionSort {
     public static void main(String[] args) {
 
         int arr[] = {36,19,29,12,5};
+        System.out.print("original array: "+ Arrays.toString(arr) + " ");
         int length = arr.length;
 
                 for(int i=0; i<length; i++)
                 {
-                    int min=i , temp=0;
+                    int min=i ;
                     for(int j=i+1; j<length; j++)
                     {
                         if(arr[j] < arr[min])
@@ -20,11 +21,11 @@ public class SelectionSort {
                              min = j;
                         }
                     }
-                    temp=arr[i];
+                  int  temp=arr[i];
                     arr[i]= arr[min];
                     arr[min]=temp;
                 }
-                System.out.print("original array: "+ Arrays.toString(arr) + " ");
+
                System.out.print("\n selection sort:");
 
                     for(int i=0; i<length;i++)

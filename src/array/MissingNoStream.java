@@ -12,7 +12,7 @@ public class MissingNoStream {
 
         int arr[] = {2, 3, 3, 3, 5, 7, 8, 1};
 
-       Set<Integer> set= Arrays.stream(arr).boxed().collect(Collectors.toSet());
+        Set<Integer> set= Arrays.stream(arr).boxed().collect(Collectors.toSet());
 
         System.out.println("set: "+ set);
 
