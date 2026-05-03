@@ -8,10 +8,10 @@ public class PrimeNo {
         int end=30;
 
         System.out.println("prime No 0 to 30");
-        for(int i=start; i<end; i++)
+        for(int i=start;  i<end;i++)
         {
             int temp=0;
-            for(int j=2; j< i; j++)
+            for(int j=2; j< i;j++)
             {
                 if(i %j ==0)
                 {

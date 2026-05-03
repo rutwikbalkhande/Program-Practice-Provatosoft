@@ -4,6 +4,8 @@ public class Max_SecMax_Min_EleArray {
 
     public static void main(String[] args) {
 
+
+
     int[] arr = {10, 25, 3, 99, 56, 72};
 
     int max=0;

@@ -1,10 +1,9 @@
-package array;
+package com.provatosoft.assignment;
 
 import java.util.Arrays;
 import java.util.HashMap;
 
 public class TwoSum {
-    //Approch1
     public static int[] getTwoSumIndex_BruteForce(int arr[], int sum){
 
         // Outer loop
@@ -17,10 +16,11 @@ public class TwoSum {
                 }
             }
         }
+
         // return -1,-1 if not exist
         return new int[]{-1,-1};
     }
-//Approch 2**
+
     public static int[] getTwoSumIndex_Optimized(int arr[], int sum){
 
         HashMap<Integer, Integer> hm = new HashMap<>();

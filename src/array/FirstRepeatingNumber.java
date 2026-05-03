@@ -31,5 +31,9 @@ public class FirstRepeatingNumber {
             System.out.println("no repeate No");
         }
 
+
+
+
+
     }
 }
