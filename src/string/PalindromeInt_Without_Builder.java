@@ -4,7 +4,7 @@ public class PalindromeInt_Without_Builder {
 
     public static void main(String[] args) {
 
-        int num=123;
+        int num=121;
         int original=num;
 
         int rev=0;
@@ -20,7 +20,7 @@ public class PalindromeInt_Without_Builder {
             System.out.println("palindrome");
         }
         else {
-            System.out.println("not: " + rev);
+            System.out.println("not");
         }
     }
 }

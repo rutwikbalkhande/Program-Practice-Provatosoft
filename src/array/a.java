@@ -1,43 +1,30 @@
 package array;
 
-
-import java.util.Arrays;
-import java.util.Comparator;
+import java.lang.reflect.Array;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class a {
-
     public static void main(String[] args) {
 
-        for(int r=1;r<=5;r++)
-        {
-            for(int s=1;s<=(5-r);s++)
-            {
-                System.out.print(" ");
-            }
-            for(int c=1;c<=r;c++)
-            {
-                System.out.print(c+ " ");
+        int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+        int max= Integer.MIN_VALUE;
+        int sum=0;
+        int start=0; int end=0;
+        int temp=0;
 
+        for(int i=0; i< arr.length;i++){
+            sum= sum + arr[i];
+            if(sum > max){
+                max= sum;
+                start =temp;
+                end=i;
+            }
+            if(sum < 0){
+                sum=0;
+                temp= i + 1;
 
             }
-            System.out.println();
-        }
-// reverse Trangle print start from 6th line
-
-        for(int r=4;r>=1;r--)
-        {
-            for(int s=1;s<=(5-r);s++)
-            {
-                System.out.print(" ");
-            }
-            for(int c=1;c<=r;c++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
         }
     }
-
 }
-
-

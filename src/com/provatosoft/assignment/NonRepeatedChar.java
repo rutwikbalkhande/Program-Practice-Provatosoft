@@ -10,13 +10,17 @@ public class NonRepeatedChar {
 
         LinkedHashSet<Character> set =new LinkedHashSet<>();
 
+
         for(int i=0;i<name.length();i++)
         {
+
             if (set.contains(name.charAt(i)))           //1st check in set same character available or not
             {
                 System.out.println("not unique: " + name.charAt(i));
+
             }
             else {
+
                 set.add(name.charAt(i));
                 System.out.println("dublicate char not available");
             }
