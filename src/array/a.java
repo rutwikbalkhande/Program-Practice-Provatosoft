@@ -8,34 +8,19 @@ public class a {
 
     public static void main(String[] args) {
 
-        for(int r=1;r<=5;r++)
-        {
-            for(int s=1;s<=(5-r);s++)
-            {
-                System.out.print(" ");
-            }
-            for(int c=1;c<=r;c++)
-            {
-                System.out.print(c+ " ");
+        char arr[]={'b','a','f','e','d','c'};
 
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1; j< arr.length;j++){
 
+                if(arr[i]< arr[j]){
+                    char c= arr[i];
+                    arr[i]= arr[j];
+                    arr[j]=c;
+                }
             }
-            System.out.println();
         }
-// reverse Trangle print start from 6th line
-
-        for(int r=4;r>=1;r--)
-        {
-            for(int s=1;s<=(5-r);s++)
-            {
-                System.out.print(" ");
-            }
-            for(int c=1;c<=r;c++)
-            {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+        System.out.println(Arrays.toString(arr));
     }
 
 }
